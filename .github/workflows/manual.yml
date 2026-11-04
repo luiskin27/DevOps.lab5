@@ -6,9 +6,9 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Переменная
-        run: echo "Курс: $COURSE"
-      - name: Кто запустил
-        run: echo "Запустил: ${{ github.actor }}"
-      - name: Секрет
-        run: echo "Секрет: ${{ secrets.MY_SECRET }}"
+      - name: Variable
+        run: echo Course is $COURSE
+      - name: Actor
+        run: echo Triggered by ${{ github.actor }}
+      - name: Secret
+        run: echo Secret is ${{ secrets.MY_SECRET }}
